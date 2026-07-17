@@ -3,11 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Omar Ameen — AI product visual creator. Studio-quality AI-generated images and ad videos for e-commerce brands in fashion, beauty, food, and tech.">
 <title>Omar Ameen — AI Product Visuals</title>
-<!-- Preconnect to Google Fonts origins BEFORE the stylesheet request -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -302,20 +298,20 @@ footer span{color:var(--gold-dim);}
 <!-- ════════════ HERO ════════════ -->
 <section id="hero" style="max-width:none;padding:0;margin:0;height:100vh;min-height:600px;">
 
-  <video id="hero-video" autoplay muted playsinline>
-    <track kind="captions">
-  </video>
+  <!-- Video (hidden until user adds src) -->
+  <!-- <video id="hero-video" autoplay muted loop playsinline style="display:none;"></video> -->
+  <video id="hero-video" autoplay muted playsinline></video>
 
   <div id="video-sources" style="display:none;">
-    <source data-src="ai-vid/zsky1 - Trim.mp4" data-webm="ai-vid/zsky1 - Trim.webm">
-    <source data-src="ai-vid/arena3 - Trim.mp4" data-webm="ai-vid/arena3 - Trim.webm">
-    <source data-src="ai-vid/labs1.mp4" data-webm="ai-vid/labs1.webm">
-    <source data-src="ai-vid/artlist1.mp4" data-webm="ai-vid/artlist1.webm">
-    <source data-src="ai-vid/video-generation-1374185122-1781972310.mp4" data-webm="ai-vid/video-generation-1374185122-1781972310.webm">
-    <source data-src="ai-vid/arena4 - Trim.mp4" data-webm="ai-vid/arena4 - Trim.webm">
-    <source data-src="ai-vid/arena1.mp4" data-webm="ai-vid/arena1.webm">
-    <source data-src="ai-vid/qwen1.mp4" data-webm="ai-vid/qwen1.webm">
-    <source data-src="ai-vid/arena2.mp4" data-webm="ai-vid/arena2.webm">
+  <source data-src="ai-vid\zsky1 - Trim.mp4">
+  <source data-src="ai-vid\arena3 - Trim.mp4">
+  <source data-src="ai-vid\labs1.mp4">
+  <source data-src="ai-vid\artlist1.mp4">
+  <source data-src="ai-vid\video-generation-1374185122-1781972310.mp4">
+  <source data-src="ai-vid\arena4 - Trim.mp4">
+  <source data-src="ai-vid\arena1.mp4">
+  <source data-src="ai-vid\qwen1.mp4">
+  <source data-src="ai-vid\arena2.mp4">
   </div>
 
   <!-- Placeholder bg -->
@@ -346,6 +342,8 @@ footer span{color:var(--gold-dim);}
       </circle>
     </svg>
   </div>
+
+  <!-- <div class="upload-hint">Add your video → replace hero-video src</div> -->
 </section>
 
 <!-- ════════════ WORK SLIDER ════════════ -->
@@ -358,18 +356,19 @@ footer span{color:var(--gold-dim);}
 
   <div class="slider-wrap reveal" style="transition-delay:.15s;">
     <div class="slider-track" id="sliderTrack">
-      <div class="slide-card"><img src="ai-img/gem7.webp" alt="Product visual 1 — watch studio shot" loading="lazy" width="260" height="340"><div class="slide-card-label">Watch — Studio</div></div>
-      <div class="slide-card"><img src="ai-img/gem3.webp" alt="Product visual 2 — perfume luxury" loading="lazy" width="260" height="340"><div class="slide-card-label">Perfume — Luxury</div></div>
-      <div class="slide-card"><img src="ai-img/chat8.webp" alt="Product visual 3 — sneakers lifestyle" loading="lazy" width="260" height="340"><div class="slide-card-label">Sneakers — Lifestyle</div></div>
-      <div class="slide-card"><img src="ai-img/chat2.webp" alt="Product visual 4 — iPhone tech" loading="lazy" width="260" height="340"><div class="slide-card-label">Iphone — Tech</div></div>
-      <div class="slide-card"><img src="ai-img/chat3.webp" alt="Product visual 5 — fashion editorial" loading="lazy" width="260" height="340"><div class="slide-card-label">Fashion — Editorial</div></div>
-      <div class="slide-card"><img src="ai-img/gem5.webp" alt="Product visual 6 — minimal bag" loading="lazy" width="260" height="340"><div class="slide-card-label">Bag — Minimal</div></div>
-      <div class="slide-card"><img src="ai-img/chat7.webp" alt="Product visual 7 — technical sketch" loading="lazy" width="260" height="340"><div class="slide-card-label">Technical — Sketch</div></div>
-      <div class="slide-card"><img src="ai-img/chat5.webp" alt="Product visual 8 — poetry card minimalist" loading="lazy" width="260" height="340"><div class="slide-card-label">Poetry Card — Minimalist Mood</div></div>
-      <div class="slide-card"><img src="ai-img/chat6.webp" alt="Product visual 9 — beverage cans display" loading="lazy" width="260" height="340"><div class="slide-card-label">Beverage Cans — Product Display</div></div>
-      <div class="slide-card"><img src="ai-img/gem6.webp" alt="Product visual 10 — cereal box grocery shelf" loading="lazy" width="260" height="340"><div class="slide-card-label">Cereal Box — Grocery Shelf</div></div>
-      <div class="slide-card"><img src="ai-img/gem8.webp" alt="Product visual 11 — glasses eyewear lookbook" loading="lazy" width="260" height="340"><div class="slide-card-label">Glasses — Eyewear Lookbook</div></div>
-      <div class="slide-card"><img src="ai-img/Canva1.webp" alt="Product visual 12 — dress fashion editorial" loading="lazy" width="260" height="340"><div class="slide-card-label">Dress — Fashion Editorial</div></div>
+      <!-- Cards use Unsplash images as stand-ins -->
+      <div class="slide-card"><img src="ai-img\gem7.png" alt="Product visual 1" loading="lazy"><div class="slide-card-label">Watch — Studio</div></div>
+      <div class="slide-card"><img src="ai-img\gem3.jpg" alt="Product visual 2" loading="lazy"><div class="slide-card-label">Perfume — Luxury</div></div>
+      <div class="slide-card"><img src="ai-img\chat8.png" alt="Product visual 3" loading="lazy"><div class="slide-card-label">Sneakers — Lifestyle</div></div>
+      <div class="slide-card"><img src="ai-img\chat2.png" alt="Product visual 4" loading="lazy"><div class="slide-card-label">Iphone — Tech</div></div>
+      <div class="slide-card"><img src="ai-img\chat3.png" alt="Product visual 5" loading="lazy"><div class="slide-card-label">Fashion — Editorial</div></div>
+      <div class="slide-card"><img src="ai-img\gem5.jpg" alt="Product visual 6" loading="lazy"><div class="slide-card-label">Bag — Minimal</div></div>
+      <div class="slide-card"><img src="ai-img\chat7.png" alt="Product visual 7" loading="lazy"><div class="slide-card-label">TECHNICAL - SKETCH</div></div>
+      <div class="slide-card"><img src="ai-img\chat5.png" alt="Product visual 8" loading="lazy"><div class="slide-card-label">Poetry Card — Minimalist Mood</div></div>
+      <div class="slide-card"><img src="ai-img\chat6.png" alt="Product visual 8" loading="lazy"><div class="slide-card-label">Beverage Cans — Product Display</div></div>
+      <div class="slide-card"><img src="ai-img\gem6.jpg" alt="Product visual 8" loading="lazy"><div class="slide-card-label">Cereal Box — Grocery Shelf</div></div>
+      <div class="slide-card"><img src="ai-img\gem8.png" alt="Product visual 8" loading="lazy"><div class="slide-card-label">Glasses — Eyewear Lookbook</div></div>
+      <div class="slide-card"><img src="ai-img\Canva1.jpg" alt="Product visual 8" loading="lazy"><div class="slide-card-label">Dress — Fashion Editorial</div></div>
     </div>
   </div>
 
@@ -394,8 +393,8 @@ footer span{color:var(--gold-dim);}
 
     <div class="ba-card">
       <div class="ba-card-inner">
-        <img class="ba-before" src="ai-img/bf-af/bag-bf.webp" alt="Before — original bag product photo" width="369" height="280">
-        <img class="ba-after" src="ai-img/bf-af/gem-bag-af.webp" alt="After — AI enhanced bag visual" width="369" height="280" loading="lazy">
+        <img class="ba-before" src="ai-img\bf-af\bag-bf.jpg">
+        <img class="ba-after" src="ai-img\bf-af\gem-bag-af.jpg">
       </div>
       <span class="ba-tag before-tag">Original</span>
       <span class="ba-tag after-tag">AI Enhanced</span>
@@ -404,8 +403,8 @@ footer span{color:var(--gold-dim);}
 
     <div class="ba-card">
       <div class="ba-card-inner">
-        <img class="ba-before" src="ai-img/bf-af/drink-bf.webp" alt="Before — original drink product photo" width="369" height="280">
-        <img class="ba-after" src="ai-img/bf-af/gen-drink-af.webp" alt="After — AI enhanced drink visual" width="369" height="280" loading="lazy">
+        <img class="ba-before" src="ai-img\bf-af\drink-bf.jpg" alt="before - watch">
+        <img class="ba-after" src="ai-img\bf-af\gen-drink-af.png" alt="after - watch">
       </div>
       <span class="ba-tag before-tag">Original</span>
       <span class="ba-tag after-tag">AI Enhanced</span>
@@ -414,8 +413,8 @@ footer span{color:var(--gold-dim);}
 
     <div class="ba-card">
       <div class="ba-card-inner">
-        <img class="ba-before" src="ai-img/bf-af/dress-bf1.webp" alt="Before — original dress product photo" width="369" height="280">
-        <img class="ba-after" src="ai-img/bf-af/chat-dress-af.webp" alt="After — AI enhanced dress visual" width="369" height="280" loading="lazy">
+        <img class="ba-before" src="ai-img\bf-af\dress-bf1.jpg" alt="before - sneaker">
+        <img class="ba-after" src="ai-img\bf-af\chat-dress-af.png" alt="after - sneaker">
       </div>
       <span class="ba-tag before-tag">Original</span>
       <span class="ba-tag after-tag">AI Enhanced</span>
@@ -424,8 +423,8 @@ footer span{color:var(--gold-dim);}
 
     <div class="ba-card">
       <div class="ba-card-inner">
-        <img class="ba-before" src="ai-img/bf-af/perfuem-bf.webp" alt="Before — original perfume product photo" width="369" height="280">
-        <img class="ba-after" src="ai-img/bf-af/chat-perfuem-af.webp" alt="After — AI enhanced perfume visual" width="369" height="280" loading="lazy">
+        <img class="ba-before" src="ai-img\bf-af\perfuem-bf.jpg" alt="before - perfume">
+        <img class="ba-after" src="ai-img\bf-af\chat-perfuem-af.png" alt="after - perfume">
       </div>
       <span class="ba-tag before-tag">Original</span>
       <span class="ba-tag after-tag">AI Enhanced</span>
@@ -445,7 +444,7 @@ footer span{color:var(--gold-dim);}
   <div class="styles-grid reveal" style="transition-delay:.15s;">
 
     <div class="style-card">
-      <img class="style-card-img" src="ai-img/gem9.webp" alt="Studio Clean style — white background sharp product shot" loading="lazy" width="492" height="492">
+      <img class="style-card-img" src="ai-img\gem9.png" alt="Studio Clean style">
       <div class="style-overlay"></div>
       <span class="style-badge">Popular</span>
       <div class="style-card-content">
@@ -455,7 +454,7 @@ footer span{color:var(--gold-dim);}
     </div>
 
     <div class="style-card">
-      <img class="style-card-img" src="ai-img/gem10.webp" alt="Dark Luxury style — moody cinematic high-end product" loading="lazy" width="397" height="492">
+      <img class="style-card-img" src="ai-img\gem10.png" alt="Dark Luxury style">
       <div class="style-overlay"></div>
       <div class="style-card-content">
         <div class="style-card-name">Dark Luxury</div>
@@ -464,7 +463,7 @@ footer span{color:var(--gold-dim);}
     </div>
 
     <div class="style-card">
-      <img class="style-card-img" src="ai-img/gem11.webp" alt="Lifestyle Scene style — in-context real-feel story driven" loading="lazy" width="903" height="492">
+      <img class="style-card-img" src="ai-img\gem11.png" alt="Lifestyle Scene style">
       <div class="style-overlay"></div>
       <div class="style-card-content">
         <div class="style-card-name">Lifestyle Scene</div>
@@ -473,7 +472,7 @@ footer span{color:var(--gold-dim);}
     </div>
 
     <div class="style-card">
-      <img class="style-card-img" src="ai-img/chat9.webp" alt="Splash Motion style — liquid movement energy product" loading="lazy" width="394" height="492">
+      <img class="style-card-img" src="ai-img\chat9.png" alt="Splash / Motion style">
       <div class="style-overlay"></div>
       <span class="style-badge">Trending</span>
       <div class="style-card-content">
@@ -483,7 +482,7 @@ footer span{color:var(--gold-dim);}
     </div>
 
     <div class="style-card">
-      <img class="style-card-img" src="ai-img/chat10.webp" alt="Editorial style — magazine-ready bold styling" loading="lazy" width="369" height="655">
+      <img class="style-card-img" src="ai-img\chat10.png" alt="Editorial style">
       <div class="style-overlay"></div>
       <div class="style-card-content">
         <div class="style-card-name">Editorial</div>
@@ -492,7 +491,7 @@ footer span{color:var(--gold-dim);}
     </div>
 
     <div class="style-card">
-      <img class="style-card-img" src="ai-img/gem12.webp" alt="Minimal Flat style — clean airy social-first product" loading="lazy" width="397" height="492">
+      <img class="style-card-img" src="ai-img\gem12.png" alt="Minimal Flat style">
       <div class="style-overlay"></div>
       <div class="style-card-content">
         <div class="style-card-name">Minimal Flat</div>
@@ -580,15 +579,19 @@ footer span{color:var(--gold-dim);}
       <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
       <div><div>WhatsApp</div><span>+20 1091026831</span></div>
     </a>
+    <!-- <a class="contact-card" href="https://instagram.com/omar" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      <div><div>Instagram</div><span>@omar.visuals</span></div>
+    </a> -->
     <a class="contact-card" href="https://www.facebook.com/profile.php?id=61591766168925" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor" stroke="none">
-        <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6H17V4.8c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2V11H8v3h2.5v8h3z"/>
-      </svg>
-      <div>
-        <div>Facebook</div>
-        <span>facebook.com/Ai Visual Creator</span>
-      </div>
-    </a>
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6H17V4.8c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2V11H8v3h2.5v8h3z"/>
+    </svg>
+    <div>
+      <div>Facebook</div>
+      <span>facebook.com/Ai Visual Creator</span>
+    </div>
+  </a>
   </div>
 </section>
 
@@ -608,10 +611,12 @@ window.addEventListener('scroll',()=>{
   const hh = heroSec.offsetHeight;
   const p  = Math.min(sy / hh, 1);
 
+  // fade video/placeholder
   const vOpacity = Math.max(1 - p * 2.2, 0);
   heroVP.style.opacity  = vOpacity;
   heroVid.style.opacity = vOpacity;
 
+  // parallax hero text
   heroCont.style.transform = `translateY(${sy * 0.25}px)`;
   heroCont.style.opacity   = Math.max(1 - p * 2.5, 0);
 },{passive:true});
@@ -625,7 +630,7 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 // ── SLIDER ──
 const track  = document.getElementById('sliderTrack');
 const cards  = track.querySelectorAll('.slide-card');
-const cardW  = 260 + 20;
+const cardW  = 260 + 20; // card width + gap
 let cur = 0;
 const maxIdx = Math.max(0, cards.length - Math.floor(track.parentElement.offsetWidth / cardW));
 
@@ -636,6 +641,7 @@ function slideTo(idx){
 document.getElementById('next').addEventListener('click',()=>slideTo(cur+1));
 document.getElementById('prev').addEventListener('click',()=>slideTo(cur-1));
 
+// Auto-scroll
 let autoSlide = setInterval(()=>{
   cur < maxIdx ? slideTo(cur+1) : slideTo(0);
 },3200);
@@ -646,44 +652,25 @@ track.addEventListener('mouseleave',()=>{
   },3200);
 });
 
-// ── MULTI-VIDEO LOOP (WebM preferred, MP4 fallback) ──
+// ── MULTI-VIDEO LOOP ──
 const vid = document.getElementById('hero-video');
-const srcEls = [...document.querySelectorAll('#video-sources source')];
-const sources = srcEls.map(s => ({
-  webm: s.getAttribute('data-webm'),
-  mp4:  s.getAttribute('data-src')
-}));
+const sources = [...document.querySelectorAll('#video-sources source')]
+  .map(s => s.getAttribute('data-src'));
 let vidIndex = 0;
 
-// Check WebM support once
-const supportsWebM = vid.canPlayType('video/webm') !== '';
-
-function loadVideo(index) {
-  const s = sources[index];
-  // Use WebM if browser supports it and file exists alongside MP4
-  vid.src = supportsWebM && s.webm ? s.webm : s.mp4;
-}
-
 if (sources.length > 0) {
-  loadVideo(0);
+  vid.src = sources[0];
   vid.style.display = 'block';
-  document.getElementById('vp').style.display = 'none';
+  document.getElementById('vp').style.display = 'none'; // hide placeholder
 
   vid.addEventListener('ended', () => {
-    vidIndex = (vidIndex + 1) % sources.length;
-    loadVideo(vidIndex);
+    vidIndex = (vidIndex + 1) % sources.length; // next video, loops back to 0
+    vid.src = sources[vidIndex];
     vid.play();
   });
-
-  // Fallback: if WebM fails to load, switch to MP4
-  vid.addEventListener('error', () => {
-    const s = sources[vidIndex];
-    if (vid.src !== s.mp4) {
-      vid.src = s.mp4;
-      vid.play();
-    }
-  });
 }
+
+
 </script>
 </body>
 </html>
